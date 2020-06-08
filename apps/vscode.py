@@ -64,7 +64,7 @@ context.keymap(
         "find": Key("cmd-f"),
         "find next <dgndictation>": jump_to_next_word_instance,
         # Clipboard
-        "clone": Key("alt-shift-down"),
+        "clone": Key("alt-shift-down") ,
         # Navigation
         ("line | spring") + optional_numerals: jump_to_line,
         "Go to line": Key("ctrl-g"),
@@ -80,8 +80,10 @@ context.keymap(
         "master": Key("cmd-p"),
         # tabbing
         "stiffy": Key("cmd-alt-left"),
+        "tab left": Key("cmd-alt-left"),
         "next tab": Key("cmd-alt-right"),
         "stippy": Key("cmd-alt-right"),
+        "tab right": Key("cmd-alt-right"),
         "last tab": Key("cmd-alt-left"),
         "new tab": Key("cmd-n"),
         "jump" + optional_numerals: jump_tabs,
@@ -91,8 +93,9 @@ context.keymap(
         # editing
         "bracken": [Key("cmd-shift-ctrl-right")],
         # various
-        "comment": Key("cmd-shift-7"),
+        # "comment": Key("cmd-shift-7"),
+        "comment selection": Key("cmd-/"),
         "search all": Key("cmd-shift-f"),
-        "(drop-down | drop)": Key("ctrl-space"),
+        # "(drop-down | drop)": Key("ctrl-space"),
     }
 )
